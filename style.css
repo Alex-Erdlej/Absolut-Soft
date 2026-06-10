@@ -520,7 +520,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 0;
 }
 
 .section-3-headline {
@@ -536,13 +536,13 @@ ul {
     font-family: var(--font-futura-cond);
     font-size: 32px;
     color: var(--dark-text);
-    margin-top: 32px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .section-3-textblock {
     max-width: 680px;
-    margin: 0 auto;
+    margin: 32px auto 0;
     text-align: left;
     position: absolute;
     left: 50%;
@@ -1598,7 +1598,7 @@ ul {
 
     .section-3-subheadline {
         font-size: clamp(16px, 2vw, 24px);
-        margin-top: 0;
+        margin-top: 6px;
     }
 
     .section-3-text {
@@ -1799,21 +1799,21 @@ ul {
 
     /* ---- Side buy button ---- */
     .side-buy-btn {
-        width: 180px;
+        width: 160px;
         height: 36px;
-        font-size: 14px;
-        right: -72px;
+        font-size: 18px;
+        right: -64px;
         gap: 6px;
     }
 
     .side-buy-btn:hover {
-        height: 44px;
-        right: -68px;
+        height: 68px;
+        right: -90px;
     }
 
     .side-buy-btn .cart-icon {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
     }
 
     /* ---- Sec 2 & 3 ---- */
@@ -1841,7 +1841,7 @@ ul {
         transform: none;
         left: auto;
         bottom: auto;
-        margin: 0 auto;
+        margin: 20px auto 0;
         max-width: 90%;
         width: 100%;
     }
@@ -1852,6 +1852,7 @@ ul {
 
     .section-3-subheadline {
         font-size: 18px;
+        margin-top: 10px;
     }
 
     .section-3-text {
