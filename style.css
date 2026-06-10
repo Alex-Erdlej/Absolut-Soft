@@ -536,7 +536,7 @@ ul {
     font-family: var(--font-futura-cond);
     font-size: 32px;
     color: var(--dark-text);
-    margin-top: 20px;
+    margin-top: 8px;
     text-align: center;
 }
 
@@ -1856,7 +1856,7 @@ ul {
     }
 
     .section-3-text {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /* ---- Sec 5 & 9 ---- */
