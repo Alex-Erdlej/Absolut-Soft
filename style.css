@@ -517,6 +517,10 @@ ul {
     text-align: center;
     padding: 0 20px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
 .section-3-headline {
@@ -1825,16 +1829,21 @@ ul {
     }
 
     .section-3 {
-        height: 402px;
-        padding: 40px 0 20px;
-        align-items: flex-start;
+        height: auto;
+        min-height: 402px;
+        padding: 50px 20px 50px;
+        align-items: center;
+        justify-content: center;
     }
 
     .section-3-textblock {
         position: static;
         transform: none;
-        margin: 16px auto 0;
+        left: auto;
+        bottom: auto;
+        margin: 0 auto;
         max-width: 90%;
+        width: 100%;
     }
 
     .section-3-headline {
