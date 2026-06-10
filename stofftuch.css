@@ -1,0 +1,196 @@
+/* =============================================
+   ABSOLUT SOFT – stofftuch.css
+   Stofftücher-specific overrides
+   ============================================= */
+
+/* Section 5: Creamy Vanilla – lighter cream/beige tones */
+:root {
+    --sec5-top-bg: #C8A85A;
+    --sec5-bottom-bg: #A88C3E;
+    --sec5-headline-color: #FFF8E8;
+}
+
+/* HERO-TEXT FIX: Paddings als clamp() damit bei Tablets
+   (769px–1100px) kein Zusammenstossen der Texte entsteht.
+   Stofftuch hat die grössten Paddings (9rem / 11.5rem) –
+   deshalb muss das clamp() hier besonders stark skalieren. */
+.hero-text-left {
+    font-family: var(--font-futura-cond);
+    font-size: clamp(55px, 8.5vw, 120px);
+    font-weight: bold;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    line-height: 1;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+    /* clamp: min 0.5rem, bevorzugt 7vw, max 9rem */
+    padding-left: clamp(0.5rem, 7vw, 9rem);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.hero-text-right {
+    font-family: var(--font-futura-cond);
+    font-size: clamp(55px, 8.5vw, 120px);
+    font-weight: bold;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    line-height: 1;
+    text-align: right;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+    /* clamp: min 0.5rem, bevorzugt 9vw, max 11.5rem */
+    padding-right: clamp(0.5rem, 9vw, 11.5rem);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1366px) and (min-width: 769px) {
+
+    /* Hero-Text font-size bereits durch clamp() geregelt */
+    .hero-text-left,
+    .hero-text-right {
+        font-size: clamp(55px, 8.5vw, 120px);
+    }
+
+    /* Section 9: Jetzt Kaufen Button skalieren */
+    .section-9-top .btn-sec9 {
+        width: clamp(260px, 50%, 400px) !important;
+    }
+}
+
+/* Section 5: Creamy Vanilla – Sterne */
+.section-5-top .stars,
+.section-5-top .stars-count {
+    color: #FFF0C0 !important;
+}
+
+/* Section 5: Direkte Hintergrundfarben (Variablen-Fallback) */
+.section-5-top {
+    background: #C8A85A !important;
+}
+
+.section-5-bottom {
+    background: #A88C3E !important;
+}
+
+/* Section 9: Cherry Blossom – pink/rose tones
+   Alle Selektoren auf .section-9-top/.section-9-bottom
+   umgestellt, da .section-9 nach dem JS-Unwrap nicht mehr
+   als DOM-Elternelement existiert. */
+.section-9-top {
+    background: #E8788A !important;
+}
+
+.section-9-bottom {
+    background: #C25068 !important;
+}
+
+.section-9-top .sec9-headline {
+    color: #FFF0F3 !important;
+}
+
+.section-9-top .sec9-subheadline {
+    color: #FFF0F3 !important;
+}
+
+.section-9-top .stars,
+.section-9-top .stars-count {
+    color: #FFB8C8 !important;
+}
+
+.section-9-top .sec9-textblock-1 p {
+    color: #FFF0F3 !important;
+    font-size: 26px;
+}
+
+.section-9-top .sec9-textblock-2 p {
+    color: #FFF0F3 !important;
+}
+
+.section-9-bottom .sec5-bottom-text,
+.section-9-bottom .sec9-line1,
+.section-9-bottom .sec9-line2,
+.section-9-bottom .sec9-line3,
+.section-9-bottom .sec9-handwritten {
+    color: #FFF0F3 !important;
+}
+
+/* Section 9: Jetzt Kaufen */
+.section-9-top .btn-sec9 {
+    width: 400px !important;
+    height: 64px !important;
+    font-size: 26px !important;
+}
+
+/* ---- Section 6: Desktop ---- */
+@media (min-width: 769px) {
+    .scent-item {
+        flex: 0 0 220px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .scent-img {
+        width: 220px;
+        height: 200px;
+        object-fit: cover;
+        background: transparent;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .scent-slider-wrapper {
+        width: 80%;
+        justify-content: center;
+    }
+}
+
+/* ---- Mobile overrides ---- */
+@media (max-width: 768px) {
+
+    .scent-slider-wrapper {
+        width: 100%;
+    }
+
+    .scent-item {
+        flex: 0 0 190px;
+        overflow: hidden;
+    }
+
+    .scent-img {
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .sec6-mobile-header {
+        transform: rotate(-5deg);
+        transform-origin: left bottom;
+        margin-left: 24px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        text-align: left;
+    }
+
+    .sec6-headline {
+        text-align: left !important;
+    }
+
+    .sec6-handwritten {
+        font-size: 30px;
+    }
+
+    .sec6-futura {
+        font-size: 25px;
+    }
+
+    .sec6-bottom-text {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .section-9-top .btn-sec9 {
+        width: 260px !important;
+        height: 48px !important;
+        font-size: 18px !important;
+    }
+}
