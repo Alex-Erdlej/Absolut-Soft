@@ -3,15 +3,15 @@
    ============================================= */
 
 @font-face {
-    font-family: 'Absolut';
-    src: url('fonts/absolut-bold.woff') format('woff');
+    font-family: 'Barlow Condensed';
+    src: url('fonts/barlow-bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Absolut';
-    src: url('fonts/absolut-regular.woff') format('woff');
+    font-family: 'Barlow Condensed';
+    src: url('fonts/barlow-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,8 +33,8 @@
     --nav-bg: #E8E8E8;
     --white: #ffffff;
     --black: #000000;
-    --font-futura-cond: 'Futura Condensed Extra', 'Arial Narrow', sans-serif;
-    --font-futura: 'Futura', 'Century Gothic', Futura, sans-serif;
+    --font-futura-cond: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    --font-futura: 'Barlow Condensed', 'Arial Narrow', sans-serif;
     --font-handwritten: 'Absolut Handwritten', cursive;
 
     /* Section 5/9 colors – overridden per page */
@@ -174,6 +174,7 @@ ul {
     font-family: var(--font-futura-cond);
     color: var(--white);
     font-size: 35px;
+    font-weight: bold;
     letter-spacing: 0.01em;
     cursor: pointer;
     text-decoration: none;
@@ -352,6 +353,7 @@ ul {
     color: var(--white);
     font-family: var(--font-futura-cond);
     font-size: 20px;
+    font-weight: bold;
     letter-spacing: 0.1em;
     display: flex;
     align-items: center;
@@ -413,10 +415,10 @@ ul {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* HERO-TEXT FIX: Mindestabstand zwischen den beiden Texten.
        Verhindert Berührung bei Tablet-Breiten (769px–1100px). */
-    gap: clamp(2rem, 6vw, 6rem);
+    gap: clamp(16rem, 35vw, 32rem);
     /* Kein Overflow-Clipping: Texte werden stattdessen kleiner */
     overflow: visible;
 }
@@ -436,7 +438,7 @@ ul {
     line-height: 1;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
     /* Padding ebenfalls fluid */
-    padding-left: clamp(0.5rem, 2vw, 2rem);
+    padding-left: clamp(0.5rem, 2vw, 0.5rem);
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -450,7 +452,7 @@ ul {
     line-height: 1;
     text-align: right;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
-    padding-right: clamp(0.5rem, 2.5vw, 2.5rem);
+    padding-right: clamp(0.5rem, 2.5vw, 4.5rem);
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -519,7 +521,7 @@ ul {
 
 .section-3-headline {
     font-family: var(--font-futura-cond);
-    font-size: 64px;
+    font-size: 60px;
     color: var(--blue);
     line-height: 1.1;
     text-align: center;
@@ -528,20 +530,20 @@ ul {
 
 .section-3-subheadline {
     font-family: var(--font-futura-cond);
-    font-size: 24px;
+    font-size: 32px;
     color: var(--dark-text);
-    margin-top: 12px;
+    margin-top: 32px;
     text-align: center;
 }
 
 .section-3-textblock {
-    max-width: 580px;
+    max-width: 680px;
     margin: 0 auto;
     text-align: left;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 20px;
+    bottom: 60px;
 }
 
 .section-3-text {
@@ -634,6 +636,7 @@ ul {
     color: var(--black);
     font-family: var(--font-futura-cond);
     font-size: 26px;
+    font-weight: bold;
     letter-spacing: 0.1em;
     border: none;
     cursor: pointer;
@@ -657,6 +660,7 @@ ul {
 .sec5-bottom-top {
     font-family: var(--font-futura-cond);
     font-size: 120px;
+    font-weight: bold;
     display: block;
     text-transform: uppercase;
     line-height: 1.0;
@@ -751,6 +755,7 @@ ul {
 .sec9-line1 {
     font-family: var(--font-futura-cond);
     font-size: 96px;
+    font-weight: bold;
     line-height: 1.0;
     display: block;
     text-transform: uppercase;
@@ -759,6 +764,7 @@ ul {
 
 .sec9-line2 {
     font-size: 96px;
+    font-weight: bold;
     line-height: 1.0;
     display: block;
     text-transform: uppercase;
@@ -768,6 +774,7 @@ ul {
 .sec9-line3 {
     font-family: var(--font-futura-cond);
     font-size: 96px;
+    font-weight: bold;
     line-height: 1.0;
     display: block;
     text-transform: uppercase;
@@ -792,6 +799,7 @@ ul {
     color: var(--black);
     font-family: var(--font-futura-cond);
     font-size: 20px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     transition: background 0.2s;
@@ -812,6 +820,7 @@ ul {
     color: var(--white);
     font-family: var(--font-futura-cond);
     font-size: 20px;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     transition: background 0.2s;
@@ -831,6 +840,7 @@ ul {
     color: var(--blue);
     font-family: var(--font-futura-cond);
     font-size: 20px;
+    font-weight: bold;
     text-align: center;
     line-height: 1.1;
     cursor: pointer;
@@ -863,7 +873,7 @@ ul {
 
 .sec6-handwritten {
     font-family: var(--font-handwritten);
-    font-size: 68px;
+    font-size: 62px;
     color: var(--dark-text);
     padding-right: 10px;
 }
