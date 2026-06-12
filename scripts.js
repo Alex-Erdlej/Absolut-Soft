@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.innerHTML = `
             <h2 class="sec11-headline">ABSOLUT SOFT</h2>
             <p class="sec11-handwritten">HERGESTELLT<br>IN DEM DORF ÅHUS</p>
-            <a href="#" class="sec11-mobile-link">
+            <a href="mailto:aer57057@stud.hs-furtwangen.de?subject=Sie%20bekommen%20eine%201.0" class="sec11-mobile-link">
                 Mehr<br>Erfahren <span class="sec11-arrow">&gt;</span>
             </a>
         `;
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (overlay.querySelector('.sec8-mobile-link')) return;
 
         const mobileLink = document.createElement('a');
-        mobileLink.href = '#';
+        mobileLink.href = 'mailto:aer57057@stud.hs-furtwangen.de?subject=Sie%20bekommen%20eine%201.0';
         mobileLink.className = 'sec8-mobile-link sec11-mobile-link';
         mobileLink.innerHTML = 'Mehr<br>Erfahren <span class="sec11-arrow">&gt;</span>';
         overlay.appendChild(mobileLink);
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (overlay.querySelector('.sec12-mobile-link')) return;
 
         const mobileLink = document.createElement('a');
-        mobileLink.href = '#';
+        mobileLink.href = 'mailto:aer57057@stud.hs-furtwangen.de?subject=Sie%20bekommen%20eine%201.0';
         mobileLink.className = 'sec12-mobile-link sec11-mobile-link';
         mobileLink.innerHTML = 'Anmelden <span class="sec11-arrow">&gt;</span>';
         overlay.appendChild(mobileLink);

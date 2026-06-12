@@ -983,6 +983,26 @@ ul {
     margin-top: 68px;
 }
 
+/* ---- Scent image link wrapper (Abschnitt 6) ----
+   Bilder in Abschnitt 6 sind jetzt in einem <a>-Tag
+   verpackt. display:block verhindert das Inline-Gap
+   unter dem Bild; overflow:hidden hält den Zoom-Effekt
+   beim Hover innerhalb der Bildgrenzen. */
+.scent-img-link {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.scent-img-link .scent-img {
+    transition: transform 0.3s ease;
+}
+
+.scent-img-link:hover .scent-img {
+    transform: scale(1.06);
+}
+
 /* ---- SECTION 7 ---- */
 .section-7 {
     height: 840px;
@@ -1250,6 +1270,24 @@ ul {
 .three-img-link:hover .link-arrow {
     transform: translateX(5px);
 }
+
+/* ---- Three-image link wrapper (Abschnitt 13) ----
+   Bilder in Abschnitt 13 sind jetzt in einem <a>-Tag
+   verpackt. display:block entfernt den Inline-Gap. */
+.three-img-img-link {
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.three-img-img-link .three-img {
+    transition: opacity 0.3s ease;
+}
+
+.three-img-img-link:hover .three-img {
+    opacity: 0.75;
+}
+
 
 /* ---- SECTION 14: Footer ---- */
 .section-14 {
